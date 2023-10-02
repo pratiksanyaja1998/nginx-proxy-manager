@@ -1,4 +1,4 @@
-FROM jc21/nginx-full:certbot-node
+FROM spy/nginx-full:certbot-node
 LABEL maintainer="Jamie Curnow <jc@jc21.com>"
 
 # See: https://github.com/just-containers/s6-overlay/blob/master/README.md

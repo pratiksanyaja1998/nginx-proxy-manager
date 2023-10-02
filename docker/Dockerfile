@@ -3,7 +3,7 @@
 
 # This file assumes that the frontend has been built using ./scripts/frontend-build
 
-FROM jc21/nginx-full:certbot-node
+FROM spy/nginx-full:certbot-node
 
 ARG TARGETPLATFORM
 ARG BUILD_VERSION
