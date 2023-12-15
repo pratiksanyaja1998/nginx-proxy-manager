@@ -1,26 +1,42 @@
-<div class="container">
+<div class="container ">
     <div class="row">
         <div class="col col-login mx-auto">
-            <form class="card" action="" method="post">
-                <div class="card-body p-6">
+            <form class="card rounded" style="background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px); " action="" method="post">
+                <div class="card-body p-6 form-row align-items-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="text-center p-6">
-                                    <img src="/images/logo-text-vertical-grey.png" alt="Logo" />
-                                    <div class="text-center text-muted mt-5">
-                                        <%- i18n('main', 'version', {version: getVersion()}) %>
-                                    </div>
+                            <div class="col-sm-12 col-md-6  ">
+                                <div class="text-center p-6 ">
+                                    <img src="/images/iospark-logo.png" alt="Logo" />
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="card-title"><%- i18n('login', 'title') %></div>
-                                <div class="form-group">
-                                    <label class="form-label"><%- i18n('str', 'email-address') %></label>
+                            <div class="col-sm-12 col-md-6 align-self-center">
+                                <div class="row justify-content-center mb-5" >
+                                    <div class="col-4 text-center h-50 span-4">
+                                        <img src="/images/logo-256.png" class="h-50 w-50" alt="Logo" />
+                                    </div>
+                                    <div class="col-8  align-self-center h6 p-0"><%- i18n('login', 'title') %></div>
+                                </div>
+                                <label class="form-label "><%- i18n('str', 'email-address') %></label>
+                                
+                                <div class="input-group mb-2 mr-sm-2">
+                                    <div class="input-group-prepend">
+                                       
+                                        <!-- <div class="input-group-text "> -->
+                                            <!-- <i class="fa-solid fa-user"></i> -->
+                                        <!-- </div> -->
+                                        <div class="input-group-text ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                                        </div>
+                                    </div>
                                     <input name="identity" type="email" class="form-control" placeholder="<%- i18n('str', 'email-address') %>" required autofocus>
                                 </div>
-                                <div class="form-group">
-                                    <label class="form-label"><%- i18n('str', 'password') %></label>
+                                <label class="form-label"><%- i18n('str', 'password') %></label>
+                                <div class="input-group mb-2 mr-sm-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/></svg>                        </div>
+                                      </div>
                                     <input name="secret" type="password" class="form-control" placeholder="<%- i18n('str', 'password') %>" required>
                                     <div class="invalid-feedback secret-error"></div>
                                 </div>

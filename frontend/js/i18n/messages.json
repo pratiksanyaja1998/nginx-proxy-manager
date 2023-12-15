@@ -38,7 +38,7 @@
       "any": "Any"
     },
     "login": {
-      "title": "Login to your account"
+      "title": "NGINX Proxy Manager"
     },
     "main": {
       "app": "Nginx Proxy Manager",
